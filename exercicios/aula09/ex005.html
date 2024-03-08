@@ -24,9 +24,33 @@
 
     <p> Aprendendo a usar <strong>DOM</strong> em JavaScript </p>
 
-    <div> Clique em mim </div>
+    <div id="d"> Esta é a div "d" </div>
+
+    <div name = "msg"> Esta é a div "msg" </div>
+
+    <div id="testid"> Esta é a div "testid" </div>
+
+    <div class="testclass"> Esta é a div "testclass" </div>
 
     <script>
+
+        var p1 = window.document.getElementsByTagName('p')[1]
+        p1.innerText = 'mudar parágrafo usando .getElementsByTagName(tagname)[i]'
+
+        var d = window.document.getElementById('d')
+        d.innerText = 'mudar div usando .getElementById(id)'
+        // window.document.getElementById('d').innerText = 'Sem precisar criar variável'
+        
+        var msg = window.document.getElementsByName('msg')[0]
+        msg.innerText = 'mudar div usando .getElementsByName(name)[i]'
+
+        var testid = window.document.querySelector('div#testid')
+        testid.innerText = 'mudar div usando .querySelector(tagname#id)'
+
+        // id: '#' | class: '.'
+
+        var testclass = window.document.querySelector('div.testclass')
+        testclass.innerText = 'mudar div usando .querySelector(tagname.class)'
 
     </script>
 
