@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+    <style>
+        body {
+            background: #0D1B2A;
+            color: #E0E1DD;
+            font: normal 15pt Arial;
+        }
+
+        div#area {
+            background: #415A77;
+            color: #E0E1DD;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <div id="area" onclick="clicou()" onmouseenter="mouseEnter()" onmouseout="mouseOut()"> -->
+    <div id="area">
+        Interaja
+    </div>
+
+    <script>
+
+        var area = window.document.getElementById('area')
+
+        var clicado = false
+
+        area.addEventListener('mouseenter', mouseEnter)
+        area.addEventListener('mouseout', mouseOut)
+        area.addEventListener('click', clicou)
+
+        function mouseEnter() {
+            area.style.background = '#778DA9'
+        }
+
+        function mouseOut() {
+            if (!clicado) {
+                area.style.background = '#415A77'
+                area.innerText = 'Interaja'
+            }
+        }
+
+        function clicou() {
+            clicado = !clicado
+            if (clicado) {
+                area.innerText = 'Clicado'
+                area.style.background = '#778DA9'
+            }
+            else {
+                area.innerText = 'Interaja'
+                area.style.background = '#415A77'
+            }
+        }
+
+    </script>
+
+</body>
+</html>
