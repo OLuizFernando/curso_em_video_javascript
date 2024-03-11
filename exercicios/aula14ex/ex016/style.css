@@ -1,0 +1,26 @@
+body {
+    background: #1E352F;
+    color: #F8F7FF;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: #F8F7FF;
+    text-align: center;
+}
+
+section {
+    background: #335145;
+    color: #F8F7FF;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
+}
+
+footer {
+    color: #F8F7FF;
+    text-align: center;
+    font-style: italic;
+}
