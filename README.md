@@ -1,2 +1,1 @@
-# Curso de Javascript
-## Curso em Vídeo - Professor Gustavo Guanabara
+# Curso de Javascript - Curso em Vídeo
